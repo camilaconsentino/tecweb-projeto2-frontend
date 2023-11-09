@@ -21,6 +21,8 @@ export default function Formulario(props) {
                 setName("");
                 setEmail("");
             })
+
+        sendMail(email, name);
     }
 
     return (

@@ -45,15 +45,16 @@ async function getToken() {
 //getToken();
 
 // Fazendo a requisição do email
-async function sendMail() {
+async function sendMail(user, name) {
     try {
         const bearerToken = await getToken();
         
         const email = {
-            email: 'cami.consentino@gmail.com',
+            email: user,
             id_sender_email: 322291,
-            subject: 'TESTANDOOOOOO',
-            body_html: '<html><body>hola</body></html>',
+            body_html: `Olá ${name}, bem vinde a nossa familia! Entre no site para marcar sua primeira aula`,
+            date_planned: null,
+            subject: 'Bem Vinde!!',
         };
 
         // const config = {
@@ -101,4 +102,4 @@ async function sendMail() {
 }
 
 // Chamar a função sendMail
-sendMail();
+sendMail("cami.consentino@gmail.com", "Camila");
