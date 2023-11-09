@@ -1,20 +1,29 @@
+import { useEffect, useState } from "react";
 import axios from "axios";
-import Note from "./components/Note";
+import Formulario from "./components/Formulario"; 
 import "./App.css";
 
 function App() {
-  // O array de notes continua aqui
-  axios
-    .get("http://localhost:8000/api/notes/")
-    .then((res) => console.log(res));
+  const [contatos, setContatos] = useState([]);
+
+  const carregaContatos = () => {
+    axios
+    .get("http://localhost:8000/api/emailsuser/")
+    .then((res) => setContatos(res.data));
+  }
+
+  useEffect(() => {
+    carregaContatos();
+  }, []);
+
+  console.log(contatos);
 
   return (
     <div className="App">
-      {notes.map((note) => (
-        <Note key={`note__${note.id}`} title={note.title}>
-          {note.content}
-        </Note>
-      ))}
+      
+      <img src='/logo-yoga.png' />
+      <Formulario  funcao={carregaContatos}/>
+
     </div>
   );
 }
