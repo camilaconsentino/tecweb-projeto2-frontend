@@ -1,98 +1,52 @@
-/*
-Algumas informações úteis e dicas:
-  - Fontes disponíveis:
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Permanent Marker', cursive;
-  - Cores:
-    Tons de amarelo:
-      #e4fc2b
-      #e0d426
-      #f7d736
-      #e0af26
-      #fcb02b
-    Tons de cinza:
-      #2c2c2c
-      #4c4c4c
-    Cores dos cards:
-      #ead3a7
-      #9de0f5
-      #ef89ba
-      #fae890
-      #abe9c1
-  - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
- */
+html, body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3; /* Cor de fundo clara */
+  color: #333; /* Cor do texto */
+}
 
- html,
- body {
-   font-family: "Roboto", sans-serif;
- }
- 
-/* CABEÇALHO  */
+.form-card {
+  background-color: #8a2be2; /* Alterando a cor de fundo para roxo */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+  color: white; /* Cor do texto dentro do cartão */
+}
 
- .appbar {
-   background: #f7d74a; 
-   height: 60px;
-   display: flex;
-   justify-content: left;
-   align-items: center;
-   position: sticky;
-   box-shadow: 0 1px 10px 2px rgba( 0, 0, 0, 0.6);
- 
- }
- 
- .appbar img {
-   max-width: 70px;
-   margin-left: 8px;
- }
- 
- .subtitle {
-   margin-left: 10px;
-   font-size: 13px;
- }
- 
-/* ADD NOVAS NOTAS */
+.form-card-title, .autoresize {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
 
- .container{
-   padding-top: 25px;
-   padding-left: 20px;
-   padding-right: 20px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
- }
- 
- .form-card{
-  background: #fff;
-  height: 120px;
-  width: 600px;
-  height: fit-content;
-  display:flex;
-  margin: 90px auto;
+.autoresize {
+  resize: vertical;
+}
 
-  justify-content: space-evenly;
-  flex-direction: column;
-  box-shadow: 0 3px 10px  rgba( 0, 0, 0, 0.6);
-  border-radius: 3px;
-  align-items: left;
-  padding: 12px 10px 8px 10px;
- }
- 
- .autoresize { /*conteudo*/
-   margin: 10px;
-   width: 100%;
-   padding: 8px;
-   border: 0px solid #ccc;
-   box-sizing: border-box;
-   text-align: left;
-   font-family: 'Roboto', sans-serif;
-   height: 30px; 
-   overflow-y: hidden;
- }
- 
- 
- .form-card-title {
-   border-width: 0;
-   font-size: 20px;
-   font-weight: 500;
- }
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #7a1db1; /* Cor roxa para o botão */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #6a17a8; /* Cor roxa um pouco mais escura ao passar o mouse */
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 600px) {
+  .form-card {
+      margin: 20px;
+      padding: 15px;
+  }
+}
