@@ -52,7 +52,9 @@ function App() {
 
       <div>
         <div className="appbar">
+          
         <img src='/logo-yoga.png' />
+        <h1 className="pag">Página de cadastro</h1>
         </div>
       </div>
     

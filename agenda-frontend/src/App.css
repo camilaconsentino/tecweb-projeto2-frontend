@@ -101,6 +101,13 @@ Algumas informações úteis e dicas:
    font-size: 13px;
  }
  
+ .pag {
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+  
+ }
 /* ADD NOVAS NOTAS */
 
 .container{
@@ -132,11 +139,14 @@ Algumas informações úteis e dicas:
 .autoresize { /*conteudo*/
   border-width: 0;
   font-size: 20px;
+
   font-weight: 500;
+  font-family: cursive;
 }
 
 .form-card-title {
   border-width: 0;
   font-size: 20px;
   font-weight: 500;
+  font-family: cursive;
 }
