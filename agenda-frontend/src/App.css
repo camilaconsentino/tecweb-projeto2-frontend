@@ -69,24 +69,31 @@ Algumas informações úteis e dicas:
  html,
  body {
    font-family: "Roboto", sans-serif;
+  
+  background-image: url('background.jpg');
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem no elemento */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
  }
  
 /* CABEÇALHO  */
 
  .appbar {
-   background: #f7d74a; 
-   height: 150px;
-   display: flex;
-   justify-content: left;
-   align-items: center;
-   position: sticky;
-   box-shadow: 0 1px 10px 2px rgba( 0, 0, 0, 0.6);
+  background:rgb(33, 131, 164);
+  height: 150px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: sticky;
+  top: 1;
+  box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.6);
+  width: 100%;
  
  }
  
  .appbar img {
-   max-width: 70px;
-   margin-left: 8px;
+   max-width: 150px;
+   margin-left: 1px;
  }
  
  .subtitle {
@@ -107,7 +114,7 @@ Algumas informações úteis e dicas:
 }
 
 .form-card{
- background: #fff;
+ background:  rgb(33, 131, 164);
  height: 120px;
  width: 600px;
  height: fit-content;
@@ -123,17 +130,10 @@ Algumas informações úteis e dicas:
 }
 
 .autoresize { /*conteudo*/
-  margin: 10px;
-  width: 100%;
-  padding: 8px;
-  border: 0px solid #ccc;
-  box-sizing: border-box;
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  height: 30px; 
-  overflow-y: hidden;
+  border-width: 0;
+  font-size: 20px;
+  font-weight: 500;
 }
-
 
 .form-card-title {
   border-width: 0;

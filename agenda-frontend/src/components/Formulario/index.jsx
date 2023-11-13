@@ -30,6 +30,9 @@ export default function Formulario() {
 
     return (
         <form className="form-card" onSubmit={criarContato}>
+            
+            <h1 className="title">Insira seu email</h1>
+
             <input
                 className="form-card-title"
                 type="text"
@@ -37,12 +40,12 @@ export default function Formulario() {
                 onChange={e => setName(e.target.value)}
                 value={name}
             />
-            <textarea
+            <input
                 className="autoresize"
                 placeholder="Email"
                 onChange={e => setEmail(e.target.value)}
                 value={email}
-            ></textarea>
+            ></input>
             <button className="btn" type="submit">Send</button>
         </form>
     );

@@ -5,13 +5,23 @@ html, body {
 }
 
 .form-card {
-  background-color: #8a2be2; /* Alterando a cor de fundo para roxo */
+  background-color: rgb(33, 131, 164); /* Alterando a cor de fundo para roxo */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   max-width: 400px;
   margin: 40px auto;
   color: white; /* Cor do texto dentro do cartão */
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+  
+
 }
 
 .form-card-title, .autoresize {
@@ -31,7 +41,7 @@ html, body {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #7a1db1; /* Cor roxa para o botão */
+  background-color: #5db1ed; /* Cor roxa para o botão */
   color: white;
   border: none;
   border-radius: 5px;
@@ -40,7 +50,7 @@ html, body {
 }
 
 .btn:hover {
-  background-color: #6a17a8; /* Cor roxa um pouco mais escura ao passar o mouse */
+  background-color: #4582ae; /* Cor roxa um pouco mais escura ao passar o mouse */
 }
 
 /* Adaptação para dispositivos móveis */
